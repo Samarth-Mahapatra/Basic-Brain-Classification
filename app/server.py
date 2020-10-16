@@ -9,10 +9,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/7o3v6p3xyoq8nj0/advanced_model.pkl?raw=1'
+export_file_url = 'https://www.dropbox.com/s/ql2jin5jg55hegj/basic_model%20%281%29.pkl?raw=1'
 export_file_name = 'advanced_model.pkl'
 
-classes = ['Prediction - High Grade Glioma', 'Prediction - Low Grade Glioma', 'Prediction - None']
+classes = ['Prediction - Tumor', 'Prediction - None']
 path = Path(__file__).parent
 
 app = Starlette()
